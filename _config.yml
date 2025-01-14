@@ -16,8 +16,8 @@ timezone: Asia/Seoul
 
 title: JW-HONG # the main title
 
-#title 아래 설명 적는 곳
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: 기술 블로그
+  since 2025.01 # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -29,8 +29,8 @@ url: "https://hongjungwook1.github.io"
 github:
   username: hongjungwook1
 
-twitter:
-  username: # change to your Twitter username
+# twitter:
+#   username: # change to your Twitter username
 
 social:
   # Change to your full name.
@@ -96,10 +96,10 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn:
+# cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: ./assets/img/main.png
+avatar: ./assets/img/favicons/main.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
