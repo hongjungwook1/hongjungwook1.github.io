@@ -59,7 +59,7 @@ script_includes:
           <em>
             {% if authors %} {% for author in authors %} {% if
             site.data.authors[author].url -%}
-            <a href="{{ site.data.authors[author].url }}">JWHONG</a>
+            <a href="{{ https://github.com/hongjungwook1/ }}">JWHONG</a>
             {%- else -%} {{ site.data.authors[author].name }} {%- endif %} {%
             unless forloop.last %}{{ '</em
           >,
@@ -69,22 +69,6 @@ script_includes:
             {% endif %}
           </em>
         </span>
-
-        <div>
-          <!-- pageviews -->
-          {% if site.pageviews.provider and
-          site.analytics[site.pageviews.provider].id %}
-          <span>
-            <em id="pageviews">
-              <i class="fas fa-spinner fa-spin small"></i>
-            </em>
-            {{ site.data.locales[lang].post.pageview_measure }}
-          </span>
-          {% endif %}
-
-          <!-- read time -->
-          {% include read-time.html content=content prompt=true lang=lang %}
-        </div>
       </div>
     </div>
   </header>
