@@ -32,7 +32,7 @@ Node.js 버전을 간단히 변경하거나 관리하는 도구입니다.
 
 ### nvm 설치 방법
 
-Bash 명령어가 필요하기에 윈도우의 경우 **Git Bash** 사용 필수
+Bash 명령어가 필요하기에 윈도우의 경우 **Git Bash** 사용 필수입니다
 
 1. > `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash`
 
