@@ -14,9 +14,9 @@ media_subpath: "/posts/20250115"
 
 React 개발을 시작하려면 더 이상 `create-react-app`을 사용하지 않습니다. 대신 개발 목표에 따라 다음 도구를 활용할 수 있습니다.
 
-- **Vite**: 빠르고 경량화된 환경에서 React 애플리케이션을 개발하고 싶다면 Vite를 사용하세요.
-- **Next.js**: React 기반 애플리케이션의 확장성과 서버 사이드 렌더링(SSR)을 활용하려면 Next.js가 적합합니다.
-- **Node.js**: React 프로젝트의 필수 기반입니다. Node.js는 JavaScript 런타임 환경으로, 패키지 관리 도구(NPM, Yarn 등)와 함께 라이브러리 설치, 스크립트 실행, 빌드 작업 등을 지원합니다.
+- **Vite** : 빠르고 경량화된 환경에서 React 애플리케이션을 개발하고 싶다면 Vite를 사용하세요.
+- **Next.js** : React 기반 애플리케이션의 확장성과 서버 사이드 렌더링(SSR)을 활용하려면 Next.js가 적합합니다.
+- **Node.js** : React 프로젝트의 필수 기반입니다. Node.js는 JavaScript 런타임 환경으로, 패키지 관리 도구(NPM, Yarn 등)와 함께 라이브러리 설치, 스크립트 실행, 빌드 작업 등을 지원합니다.
   - Node.js 버전 관리를 간편하게 하려면 `nvm(Node Version Manager)`을 사용하는 것을 추천합니다.
 
 ---
@@ -65,26 +65,26 @@ Bash 명령어가 필요하기에 윈도우의 경우 **Git Bash** 사용 필수
 
 ### Dependencies vs DevDependencies
 
-- **Dependencies**: 배포용 라이브러리
-- **DevDependencies**: 개발 중에만 필요한 라이브러리
+- **Dependencies** : 배포용 라이브러리
+- **DevDependencies** : 개발 중에만 필요한 라이브러리
 
 ### package.json vs package-lock.json
 
-- `package.json`: 라이브러리의 집합과 스크립트를 정의합니다.
-- `package-lock.json`: 라이브러리 설치 순서와 의존성 트리를 관리합니다.
+- `package.json` : 라이브러리의 집합과 스크립트를 정의합니다.
+- `package-lock.json` : 라이브러리 설치 순서와 의존성 트리를 관리합니다.
 
 ---
 
 ## React 프로젝트의 주요 파일 설명
 
-- **vite.config.js**: 개발용 설정과 운영용 번들링 설정을 관리합니다.
-- **index.html**: React가 렌더링될 시작점이 되는 HTML 파일입니다.
+- **vite.config.js** : 개발용 설정과 운영용 번들링 설정을 관리합니다.
+- **index.html** : React가 렌더링될 시작점이 되는 HTML 파일입니다.
   - `root`는 React 렌더링이 이루어지는 기준입니다.
-- **main.js** / **main.jsx**: React 렌더링을 위한 JS 파일입니다.
+- **main.js** / **main.jsx** : React 렌더링을 위한 JS 파일입니다.
 
 ---
 
-## ESLint와 Prettier: 협업을 위한 필수 설정
+## ESLint와 Prettier : 협업을 위한 필수 설정
 
 ### ESLint
 
