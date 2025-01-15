@@ -17,7 +17,6 @@ React 개발을 시작하려면 더 이상 `create-react-app`을 사용하지 �
 - **Vite**: 빠르고 경량화된 환경에서 React 애플리케이션을 개발하고 싶다면 Vite를 사용하세요.
 - **Next.js**: React 기반 애플리케이션의 확장성과 서버 사이드 렌더링(SSR)을 활용하려면 Next.js가 적합합니다.
 - **Node.js**: React 프로젝트의 필수 기반입니다. Node.js는 JavaScript 런타임 환경으로, 패키지 관리 도구(NPM, Yarn 등)와 함께 라이브러리 설치, 스크립트 실행, 빌드 작업 등을 지원합니다.
-
   - Node.js 버전 관리를 간편하게 하려면 `nvm(Node Version Manager)`을 사용하는 것을 추천합니다.
 
 ---
