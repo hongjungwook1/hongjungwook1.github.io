@@ -33,23 +33,25 @@ Node.js 버전을 간단히 변경하거나 관리하는 도구입니다.
 
 Bash 명령어가 필요하기에 윈도우의 경우 **Git Bash** 사용 필수입니다
 
-1. > `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash`
+1. > **`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash`**
 
-2. > `nano ~/.baschrc` 혹은 `vim ~/.bashrc` 입력 후
+2. > **`nano ~/.baschrc` 혹은 `vim ~/.bashrc`** 입력 후
 
-3. > `export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm` 위 내용 추가 후 저장
+3. > **`export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm`** 위 내용 추가 후 저장
 
-4. > `nvm -v` 명령어를 통해 nvm 설치가 제대로 되었는지 확인 가능합니다.
+4. > **`nvm -v`** 명령어를 통해 nvm 설치가 제대로 되었는지 확인 가능합니다.
+
+---
 
 ### 자주 사용하는 nvm 명령어 모음
 
-- `nvm list` : 현재 내 로컬에 설치되어있는 node 버전은 무엇들이 있는지 + 현재 쓰고있는지 **확인**
-- `nvm install 18` : **18** 버전 node **설치**
-- `nvm install --lts 18` : **18** 버전 중 가장 최신의 LTS 버전 node **설치**
-- `nvm install` : 현재 위치한 프로젝트의 `.nvmrc` 파일 내 명시되어있는 node 버전 자동 **설치**
-- `nvm use 18` : **18** 버전 node **선택**
-- `nvm use` : 현재 위치한 프로젝트의 `.nvmrc` 파일 내 명시되어있는 node 버전 자동 **선택**
+- **`nvm list`** : 현재 내 로컬에 설치되어있는 node 버전은 무엇들이 있는지 + 현재 쓰고있는지 **확인**
+- **`nvm install 18`** : **18** 버전 node **설치**
+- **`nvm install --lts 18`** : **18** 버전 중 가장 최신의 LTS 버전 node **설치**
+- **`nvm install`** : 현재 위치한 프로젝트의 `.nvmrc` 파일 내 명시되어있는 node 버전 자동 **설치**
+- **`nvm use 18`** : **18** 버전 node **선택**
+- **`nvm use`** : 현재 위치한 프로젝트의 `.nvmrc` 파일 내 명시되어있는 node 버전 자동 **선택**
 
 ---
 
