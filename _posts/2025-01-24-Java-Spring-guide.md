@@ -57,7 +57,6 @@ Java 프로젝트의 의존성 및 빌드 프로세스를 관리하는 도구.
 #### 예시: `build.gradle`
 
 ```java
-groovy
 repositories {
   mavenCentral()
 }
@@ -118,12 +117,13 @@ dependencies {
 - 특정 필드만 선택적으로 초기화 가능.
 - 생성자와 달리 설정 순서에 구애받지 않음.
 
-```java
 Default 값 설정 가능:
+
+```java
 @Builder
-public class Example {
-@Builder.Default
-private String field = "default value";
+  public class Example {
+  @Builder.Default
+  private String field = "default value";
 }
 ```
 
