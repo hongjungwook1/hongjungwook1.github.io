@@ -17,26 +17,20 @@ media_subpath: "/posts/20250124"
 ### JRE (Java Runtime Environment)
 
 - Java 프로그램을 **"실행"**하기 위한 환경.
-
 - JVM (Java Virtual Machine)을 포함하며 Java 바이트코드를 실행하는 역할을 수행.
-
 - Java 프로그램을 "실행"하려면 JRE만 있으면 충분.
 
 ### JDK (Java Development Kit)
 
 - Java 프로그램을 **"개발"**하기 위한 환경.
-
 - JDK = JRE + 개발 도구 (예: 컴파일러 javac, 디버거).
-
 - JDK 설치가 필요한 경우:
   - IntelliJ IDEA, Eclipse 등 IDE를 사용하여 Java 애플리케이션을 개발하려는 경우.
 
 #### Java 프로그램 실행 절차
 
 1. 소스 코드 작성 : .java 파일 생성.
-
 2. 컴파일 : javac 명령어를 사용하여 바이트코드(.class) 생성.
-
 3. 실행 : java 명령어를 사용하여 JVM이 바이트코드를 실행.
 
 ---
@@ -76,9 +70,7 @@ dependencies {
 #### Spring Framework
 
 - Java 기반 웹 애플리케이션 프레임워크.
-
 - 전통적인 방식으로 WAR 패키징 지원.
-
 - 설정이 많아 초기 진입 장벽이 높은 편.
 
 #### Spring Boot
