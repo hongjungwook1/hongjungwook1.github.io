@@ -35,20 +35,20 @@ media_subpath: "/posts/20250124"
 
 ---
 
-### Gradle 의존성 관리와 빌드 도구
+## Gradle 의존성 관리와 빌드 도구
 
-#### Gradle의 개요
+### Gradle의 개요
 
 Java 프로젝트의 의존성 및 빌드 프로세스를 관리하는 도구.
 빌드 스크립트 언어로 Groovy 또는 Kotlin 사용.
 
-#### 주요 의존성 종류
+### 주요 의존성 종류
 
 - **implementation**: 런타임 및 빌드에 필요한 의존성.
 - **compileOnly**: 컴파일 시에만 필요한 의존성.
 - **testImplementation**: 테스트 시에만 필요한 의존성.
 
-#### 예시: `build.gradle`
+### 예시: `build.gradle`
 
 ```java
 repositories {
@@ -65,15 +65,15 @@ dependencies {
 
 ---
 
-### Spring과 Spring Boot의 차이
+## Spring과 Spring Boot의 차이
 
-#### Spring Framework
+### Spring Framework
 
 - Java 기반 웹 애플리케이션 프레임워크.
 - 전통적인 방식으로 WAR 패키징 지원.
 - 설정이 많아 초기 진입 장벽이 높은 편.
 
-#### Spring Boot
+### Spring Boot
 
 - Spring Framework의 확장판으로 설정을 자동화하여 개발을 간소화.
 
@@ -84,27 +84,27 @@ dependencies {
 
 ---
 
-### Spring Reactive Web과 Spring Web
+## Spring Reactive Web과 Spring Web
 
-#### Spring Reactive Web
+### Spring Reactive Web
 
 - 비동기 지원 (Reactor 기반 Mono/Flux).
 
-#### Spring Web
+### Spring Web
 
 - Tomcat 기반으로 동기 처리.
 
 ---
 
-### 객체 초기화와 빌더 패턴
+## 객체 초기화와 빌더 패턴
 
-#### 생성자 관련 어노테이션
+### 생성자 관련 어노테이션
 
 - @NoArgsConstructor: 빈 객체를 생성하고 이후 값을 설정 (setter 사용).
 - @AllArgsConstructor: 모든 필드를 한 번에 초기화.
 - @RequiredArgsConstructor: 필수 필드만 초기화.
 
-#### 빌더 패턴 (@Builder)
+### 빌더 패턴 (@Builder)
 
 - 특정 필드만 선택적으로 초기화 가능.
 - 생성자와 달리 설정 순서에 구애받지 않음.
@@ -119,7 +119,7 @@ Default 값 설정 가능:
 }
 ```
 
-#### 빌더 패턴의 장점
+### 빌더 패턴의 장점
 
 - 필드 선택적 초기화.
 - 생성 시점과 설정 시점 분리.

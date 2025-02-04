@@ -17,21 +17,23 @@ media_subpath: "/posts/20250204"
 **Lombok**이 동작하는 방식은 단순한 코드 자동 생성이 아닙니다.
 Java 컴파일 과정에서 **Annotation Processor**를 활용하여 소스 코드의 **AST(Abstract Syntax Tree)** 를 동적으로 조작하는 방식으로 동작합니다.
 
-#### Lombok의 동작 과정
+---
 
-1️. Javac(컴파일러) 가 소스 코드를 파싱하여 AST(Abstract Syntax Tree)를 생성
-2️. Lombok Annotation Processor 가 AST를 분석한 후 필요한 Getter, Setter, 생성자 등의 메서드를 추가
-3️. Javac(컴파일러) 는 변환된 AST를 바탕으로 최종적으로 바이트코드(Bytecode)를 생성
+### Lombok의 동작 과정
+
+1️. **Javac(컴파일러)** 가 소스 코드를 파싱하여 **AST(Abstract Syntax Tree)** 를 생성
+2️. **Lombok Annotation Processor** 가 **AST**를 분석한 후 필요한 Getter, Setter, 생성자 등의 메서드를 추가
+3️. **Javac(컴파일러)** 는 변환된 **AST**를 바탕으로 최종적으로 **바이트코드(Bytecode)** 를 생성
 
 우리가 소스 코드에서 직접 Getter, Setter 등을 작성하지 않아도 Lombok이 컴파일 과정에서 자동으로 추가해 주는 것입니다.
 
 ---
 
-#### Lombok의 주요 어노테이션 정리
+## Lombok의 주요 어노테이션 정리
 
 이제 Lombok에서 가장 많이 사용되는 어노테이션을 하나씩 살펴보겠습니다.
 
-##### `@AllArgsConstructor` - 모든 필드를 포함하는 생성자 자동 생성
+### `@AllArgsConstructor` - 모든 필드를 포함하는 생성자 자동 생성
 
 ```java
 @AllArgsConstructor
@@ -45,7 +47,7 @@ public class User {
 
 ---
 
-##### `@Getter` / `@Setter` - Getter, Setter 자동 생성
+### `@Getter` / `@Setter` - Getter, Setter 자동 생성
 
 ```java
 @Getter
@@ -63,7 +65,7 @@ public class User {
 
 ---
 
-##### `@ToString` - 객체의 toString() 자동 생성
+### `@ToString` - 객체의 toString() 자동 생성
 
 ```java
 @ToString
@@ -78,7 +80,7 @@ public class User {
 
 ---
 
-##### `@RequiredArgsConstructor` - 필수 필드만 포함하는 생성자 생성
+### `@RequiredArgsConstructor` - 필수 필드만 포함하는 생성자 생성
 
 ```java
 @RequiredArgsConstructor
@@ -92,7 +94,7 @@ public class User {
 
 ---
 
-##### `@NoArgsConstructor` - 매개변수가 없는 기본 생성자 생성
+### `@NoArgsConstructor` - 매개변수가 없는 기본 생성자 생성
 
 ```java
 @NoArgsConstructor
@@ -107,7 +109,7 @@ public class User {
 
 ---
 
-##### `@EqualsAndHashCode` - equals(), hashCode() 자동 생성
+### `@EqualsAndHashCode` - equals(), hashCode() 자동 생성
 
 ```java
 @EqualsAndHashCode
@@ -125,7 +127,7 @@ public class User {
 
 ---
 
-##### `@FieldDefaults` - 필드 접근제어자 일괄 적용
+### `@FieldDefaults` - 필드 접근제어자 일괄 적용
 
 ```java
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
