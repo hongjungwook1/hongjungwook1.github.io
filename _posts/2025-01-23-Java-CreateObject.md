@@ -25,9 +25,9 @@ media_subpath: "/posts/20250123"
 필드 값을 나중에 설정할 필요가 있을 때 사용하는 방식입니다.
 
 ```java
-Member aaron = new Member();
-aaron.setName("Hong");
-aaron.setEmail("Hong@example.com");
+Member member = new Member();
+member.setName("Hong");
+member.setEmail("Hong@example.com");
 ```
 
 ```java
@@ -48,8 +48,8 @@ public class Member {
 1. 특정 필드만 초기화
 
 ```java
-Member aaron = new Member("Hong");
-aaron.setEmail("Hong@example.com");
+Member member = new Member("Hong");
+member.setEmail("Hong@example.com");
 ```
 
 ```java
@@ -79,13 +79,13 @@ public class Member {
 
 ```java
 MemberRequestDto dto = new MemberRequestDto("Hong", "Hong@example.com");
-Member aaron = new Member(dto);
+Member member = new Member(dto);
 ```
 
 3. @AllArgsConstructor 사용
 
 ```java
-Member aaron = new Member(1, "Hong", 10, "Hong@example.com");
+Member member = new Member(1, "Hong", 10, "Hong@example.com");
 ```
 
 ```java
