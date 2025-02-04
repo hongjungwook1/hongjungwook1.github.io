@@ -1,5 +1,5 @@
 ---
-title: Java 기본 문법 final 과 static
+title: Java 기본 문법 final 과 static 이란
 description: >-
   final , static 키워드 완벽 정리
 author: JWHONG
