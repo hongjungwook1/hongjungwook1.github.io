@@ -31,7 +31,7 @@ Java 컴파일 과정에서 **Annotation Processor**를 활용하여 소스 코�
 
 이제 Lombok에서 가장 많이 사용되는 어노테이션을 하나씩 살펴보겠습니다.
 
-##### @AllArgsConstructor - 모든 필드를 포함하는 생성자 자동 생성
+##### `@AllArgsConstructor` - 모든 필드를 포함하는 생성자 자동 생성
 
 ```java
 @AllArgsConstructor
@@ -45,7 +45,7 @@ public class User {
 
 ---
 
-##### @Getter / @Setter - Getter, Setter 자동 생성
+##### `@Getter` / `@Setter` - Getter, Setter 자동 생성
 
 ```java
 @Getter
@@ -63,7 +63,7 @@ public class User {
 
 ---
 
-##### @ToString - 객체의 toString() 자동 생성
+##### `@ToString` - 객체의 toString() 자동 생성
 
 ```java
 @ToString
@@ -78,7 +78,7 @@ public class User {
 
 ---
 
-##### @RequiredArgsConstructor - 필수 필드만 포함하는 생성자 생성
+##### `@RequiredArgsConstructor` - 필수 필드만 포함하는 생성자 생성
 
 ```java
 @RequiredArgsConstructor
@@ -92,7 +92,7 @@ public class User {
 
 ---
 
-##### @NoArgsConstructor - 매개변수가 없는 기본 생성자 생성
+##### `@NoArgsConstructor` - 매개변수가 없는 기본 생성자 생성
 
 ```java
 @NoArgsConstructor
@@ -107,7 +107,7 @@ public class User {
 
 ---
 
-##### @EqualsAndHashCode - equals(), hashCode() 자동 생성
+##### `@EqualsAndHashCode` - equals(), hashCode() 자동 생성
 
 ```java
 @EqualsAndHashCode
@@ -125,7 +125,7 @@ public class User {
 
 ---
 
-##### @FieldDefaults - 필드 접근제어자 일괄 적용
+##### `@FieldDefaults` - 필드 접근제어자 일괄 적용
 
 ```java
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
