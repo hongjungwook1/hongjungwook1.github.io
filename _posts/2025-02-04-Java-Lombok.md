@@ -22,7 +22,9 @@ Java 컴파일 과정에서 **Annotation Processor**를 활용하여 소스 코�
 ### Lombok의 동작 과정
 
 1️. **Javac(컴파일러)** 가 소스 코드를 파싱하여 **AST(Abstract Syntax Tree)** 를 생성
+
 2️. **Lombok Annotation Processor** 가 **AST**를 분석한 후 필요한 Getter, Setter, 생성자 등의 메서드를 추가
+
 3️. **Javac(컴파일러)** 는 변환된 **AST**를 바탕으로 최종적으로 **바이트코드(Bytecode)** 를 생성
 
 우리가 소스 코드에서 직접 Getter, Setter 등을 작성하지 않아도 Lombok이 컴파일 과정에서 자동으로 추가해 주는 것입니다.

@@ -110,7 +110,7 @@ public class Member {
 
 빌더는 객체 생성 시 모든 경우의 수를 지원하며 더 유연한 방식으로 객체를 생성할 수 있게 합니다.
 
-### 2.1. 기본 빌더 패턴 사용
+### 1. 기본 빌더 패턴 사용
 
 빌더 패턴은 3단계로 구성됩니다
 
@@ -127,7 +127,7 @@ builder
 Member member = builder.build();
 ```
 
-### 2.2. 필드 주입 순서 무관
+### 2. 필드 주입 순서 무관
 
 필드 설정 순서에 구애받지 않고 값을 주입할 수 있습니다.
 
@@ -140,7 +140,7 @@ Member member = Member.builder()
 
 ### @Builder와 다양한 활용
 
-1. @Builder.Default로 기본값 설정
+- @Builder.Default로 기본값 설정
 
 ```java
 @Builder
@@ -154,7 +154,7 @@ public class Member {
 }
 ```
 
-2. @Singular로 컬렉션 값 주입
+- @Singular로 컬렉션 값 주입
 
 ```java
 @Builder
