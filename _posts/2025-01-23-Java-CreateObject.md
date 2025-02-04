@@ -45,7 +45,7 @@ public class Member {
 
 ### 필드 값을 주입받는 커스텀 생성자
 
-1. 특정 필드만 초기화
+- 특정 필드만 초기화
 
 ```java
 Member member = new Member("Hong");
@@ -63,7 +63,7 @@ public class Member {
 }
 ```
 
-2. DTO를 활용한 생성자
+- DTO를 활용한 생성자
 
 ```java
 public class Member {
@@ -82,7 +82,7 @@ MemberRequestDto dto = new MemberRequestDto("Hong", "Hong@example.com");
 Member member = new Member(dto);
 ```
 
-3. @AllArgsConstructor 사용
+- @AllArgsConstructor 사용
 
 ```java
 Member member = new Member(1, "Hong", 10, "Hong@example.com");
