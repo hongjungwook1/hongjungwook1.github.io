@@ -49,7 +49,7 @@ Spring Boot 애플리케이션은 기본적으로 내장된 Tomcat 서버 위에
 
 Spring MVC에서는 컨트롤러가 뷰 이름(String) 또는 `ModelAndView`를 반환하면 `ViewResolver`가 이를 처리하여 웹 페이지를 생성합니다.
 
-- **String 반환 → 정적 페이지(ViewTemplate) 렌더링**
+#### **String 반환 → 정적 페이지(ViewTemplate) 렌더링**
 
 ```java
 @Controller
@@ -64,7 +64,7 @@ public class HomeController {
 - `home.html` 템플릿 파일을 찾아 렌더링합니다.
 - `ViewResolver`가 템플릿 엔진(Thymeleaf, JSP 등)을 사용해 HTML 페이지를 생성합니다.
 
-- **ModelAndView 반환 → 동적 페이지(ViewTemplate + Model) 렌더링**
+#### **ModelAndView 반환 → 동적 페이지(ViewTemplate + Model) 렌더링**
 
 ```java
 @Controller
@@ -88,7 +88,7 @@ public class UserController {
 
 `@ResponseBody`를 적용한 컨트롤러 메서드는 데이터를 JSON 형태로 변환하여 반환합니다. Spring은 내부적으로 `HttpMessageConverter`를 사용해 객체를 JSON으로 변환합니다.
 
-- **객체 반환 → JSON 변환 (@ResponseBody 사용)**
+#### **객체 반환 → JSON 변환 (@ResponseBody 사용)**
 
 ```java
 @RestController
@@ -103,7 +103,7 @@ public class ApiController {
 - User 객체가 JSON으로 변환되어 반환됩니다.
 - 내부적으로 `MappingJackson2HttpMessageConverter`가 동작하여 Java 객체를 JSON으로 변환합니다.
 
-### @RestController 사용 → 모든 메서드가 JSON 반환
+#### **@RestController 사용 → 모든 메서드가 JSON 반환**
 
 ```java
 @RestController
