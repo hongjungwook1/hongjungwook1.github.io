@@ -92,7 +92,7 @@ public class User {
 }
 ```
 
-> `final` 또는 `@NonNull`이 붙은 필드만 포함하는 생성자를 자동 생성합니다.
+> **`final` 또는 `@NonNull`이 붙은 필드만 포함하는 생성자를 자동 생성합니다.**
 
 ---
 
