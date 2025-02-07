@@ -16,23 +16,23 @@ media_subpath: "/posts/20250205"
 
 ### List (ArrayList, LinkedList)
 
-> 가장 많이 사용하는 자료구조.
-> 일렬로 나열된 데이터 집합이며, 값을 자유롭게 추가, 수정, 삭제할 수 있습니다.
+> **가장 많이 사용하는 자료구조.
+> 일렬로 나열된 데이터 집합이며, 값을 자유롭게 추가, 수정, 삭제할 수 있습니다.**
 
 - **ArrayList**: 조회 성능이 우수.
 - **LinkedList**: 삽입/삭제 성능이 우수.
 
 ### Set (HashSet, TreeSet)
 
-> 중복을 방지하는 리스트와 유사한 자료구조.
+> **중복을 방지하는 리스트와 유사한 자료구조.**
 
 - **HashSet**: 중복을 허용하지 않는 기본적인 Set.
 - **TreeSet**: 자동 정렬 기능이 추가된 Set.
 
 ### Map (HashMap, TreeMap, LinkedHashMap)
 
-> Key-Value 기반 자료구조.
-> 데이터베이스의 Primary Key - Row 구조와 유사함.
+> **Key-Value 기반 자료구조.
+> 데이터베이스의 Primary Key - Row 구조와 유사함.**
 
 - **HashMap**: 기본적인 Key-Value 저장소.
 - **TreeMap**: Key 값에 따라 자동 정렬.
@@ -43,8 +43,6 @@ media_subpath: "/posts/20250205"
 > **Generic = `<T>` : 귀에 걸면 "귀"걸이, 코에 걸면 "코"걸이**
 
 - 제네릭은 `<T>`를 활용하여 **우리가 원하는 타입을 넣으면 해당 타입에 맞게 클래스가 변화**하는 기능을 제공합니다.
-
-- 코드 예시:
 
 ```java
 public class Box<T> {
@@ -68,7 +66,7 @@ System.out.println(stringBox.getValue());
 
 ## Optional의 등장 이유
 
-> null을 외부에서 처리하지 말고 내부에서 처리하자.
+> **null을 외부에서 처리하지 말고 내부에서 처리하자.**
 
 기존에는 if 문을 사용해 null을 체크했지만 이제는 Optional을 사용할 수 있습니다.
 
@@ -85,7 +83,7 @@ String result = optional.orElse("Default Value");
 
 ## Stream의 등장 이유
 
-> 컬렉션의 요소에 대한 연산을 함수형 프로그래밍 방식으로 처리하자.
+> **컬렉션의 요소에 대한 연산을 함수형 프로그래밍 방식으로 처리하자.**
 
 기존의 for/while 문을 사용한 외부 반복을 Stream을 이용한 내부 반복으로 대체할 수 있습니다.
 
@@ -104,7 +102,7 @@ list.stream()
 
 ## Enum : 분류된 객체 모음
 
-### 1. Enum 을 통한 메서드 파라미터 제약
+### Enum 을 통한 메서드 파라미터 제약
 
 메서드 수행 시 파라미터에 너무 많은 경우의 수가 발생하는 것이 싫을 경우 **파라미터를 한정적으로 정의하여 정의**할 수 있습니다.
 
@@ -122,7 +120,7 @@ public void process(Status status) {
 }
 ```
 
-### 2. Enum 을 통한 메서드 내 로직/변수 제약
+### Enum 을 통한 메서드 내 로직/변수 제약
 
 - Enum을 활용하면 **메서드의 파라미터 값뿐만 아니라 내부 로직에서 활용할 값도 제한할 수 있습니다.**
 - 특정 Enum 값에 따라 고정된 로직을 적용할 수 있습니다.
