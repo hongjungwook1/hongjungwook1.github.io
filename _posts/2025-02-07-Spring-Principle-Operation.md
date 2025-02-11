@@ -14,34 +14,35 @@ media_subpath: "/posts/20250207"
 
 ## Spring Boot의 요청 처리 흐름
 
-Spring Boot 애플리케이션은 기본적으로 내장된 Tomcat 서버 위에서 동작하는 Java 애플리케이션입니다.
-클라이언트가 요청을 보내면 Tomcat의 서블릿 컨테이너가 이를 받아 DispatcherServlet에게 전달하고 Spring이 이를 적절한 컨트롤러로 매핑하여 처리하는 구조입니다.
+`Spring Boot`는 기본적으로 `내장된 Tomcat` 서버 위에서 동작하는 Java 애플리케이션입니다.
+
+클라이언트가 요청을 보내면 `Tomcat의 서블릿 컨테이너`가 이를 받아 `DispatcherServlet`에게 전달하고 Spring이 이를 적절한 컨트롤러로 매핑하여 처리하는 구조입니다.
 
 요청 처리 흐름은 다음과 같이 요약할 수 있습니다
 
-1. **요청(Request) → DispatcherServlet이 처리**
+**1. 요청(Request) → DispatcherServlet이 처리**
 
-   1. 클라이언트가 HTTP 요청을 보냅니다.
-   2. Tomcat의 **Servlet Container**가 `DispatcherServlet`을 호출합니다.
-   3. `DispatcherServlet`은 적절한 컨트롤러를 찾기 위해 `HandlerMapping`을 사용합니다.
+1.  클라이언트가 HTTP 요청을 보냅니다.
+2.  Tomcat의 **Servlet Container**가 `DispatcherServlet`을 호출합니다.
+3.  `DispatcherServlet`은 적절한 컨트롤러를 찾기 위해 `HandlerMapping`을 사용합니다.
 
-2. **처리(Processing) → 적절한 컨트롤러 실행**
+**2. 처리(Processing) → 적절한 컨트롤러 실행**
 
-   1. `HandlerMapping`이 요청과 일치하는 컨트롤러와 메서드를 찾습니다.
-   2. `HandlerAdapter`가 해당 컨트롤러를 실행하여 요청을 처리합니다.
-   3. 컨트롤러는 요청을 처리한 후 **응답 데이터를 반환**합니다.
+1.  `HandlerMapping`이 요청과 일치하는 컨트롤러와 메서드를 찾습니다.
+2.  `HandlerAdapter`가 해당 컨트롤러를 실행하여 요청을 처리합니다.
+3.  컨트롤러는 요청을 처리한 후 **응답 데이터를 반환**합니다.
 
-3. **응답(Response) → DispatcherServlet이 최종 응답 반환**
+**3. 응답(Response) → DispatcherServlet이 최종 응답 반환**
 
-   1. 컨트롤러에서 반환된 응답을 `DispatcherServlet`이 받습니다.
-   2. 반환된 타입에 따라 `ViewResolver` 또는 `MessageConverter`를 사용해 응답을 생성합니다.
-   3. 최종적으로 클라이언트에게 HTTP 응답을 반환합니다.
+1.  컨트롤러에서 반환된 응답을 `DispatcherServlet`이 받습니다.
+2.  반환된 타입에 따라 `ViewResolver` 또는 `MessageConverter`를 사용해 응답을 생성합니다.
+3.  최종적으로 클라이언트에게 HTTP 응답을 반환합니다.
 
 > 참고: `DispatcherServlet`은 기본적으로 싱글톤으로 동작하며 다수의 요청이 동시에 들어오면 각각의 요청을 개별 스레드에서 처리합니다.
 
 ---
 
-## Controller에서의 반환 방식
+## **Controller에서의 반환 방식**
 
 컨트롤러는 클라이언트 요청을 처리한 후 응답을 웹 페이지(HTML) 또는 JSON 데이터 형식으로 반환할 수 있습니다.
 
