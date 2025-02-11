@@ -10,7 +10,7 @@ pin: true
 media_subpath: "/posts/20250211"
 ---
 
-# Spring Boot 의의 : (1) 의존성 관리 + (2) 자동 설정
+# Spring Boot 의의 : 의존성 관리 + 자동 설정
 
 Spring Boot는 기존 Spring Framework의 불편함을 해소하고 보다 쉽게 개발할 수 있도록 돕는 프레임워크입니다.
 
@@ -42,7 +42,7 @@ Spring Boot는 다양한 라이브러리를 포함할 뿐만 아니라 이를 �
 
 ### Spring
 
-- `WAR(Web Application Archive)` 방식 : Servlet Container(WAS)에 배포되는 웹 애플리케이션 포맷.
+- `WAR(Web Application Archive) 방식` : Servlet Container(WAS)에 배포되는 웹 애플리케이션 포맷.
 
 - `외장 톰캣 필요` : 별도로 Tomcat 같은 웹 컨테이너를 실행한 후 WAR 파일을 배포해야 함.
 
@@ -65,13 +65,14 @@ Spring Boot는 다양한 라이브러리를 포함할 뿐만 아니라 이를 �
 Spring은 크게 두 가지 아키텍처 패턴을 기반으로 동작합니다
 
 **1. MVC 아키텍처 패턴**
+
 **2. 3-Layered 아키텍처 패턴**
 
 ### MVC 아키텍처 패턴 개요
 
 MVC(Model-View-Controller) 패턴은 클라이언트 요청을 처리하고 적절한 응답을 반환하기 위한 아키텍처입니다.
 
-- `Front Controller (DispatcherServlet)`
+- **Front Controller (DispatcherServlet)**
   - 모든 요청을 중앙에서 관리하며 적절한 Controller를 찾아서 실행하는 역할.
   - Controller는 View 이름과 Model 데이터를 반환.
   - 반환하는 View가 HTML인 경우 → `ViewResolver`가 적절한 템플릿을 찾아 렌더링.
@@ -93,9 +94,7 @@ MVC(Model-View-Controller) 패턴은 클라이언트 요청을 처리하고 적�
 Spring 애플리케이션은 `관심사의 분리(Separation of Concern)` 원칙을 따르기 위해 3-Layered 아키텍처 패턴을 적용합니다.
 
 - `Presentation Layer (@Controller)` : 클라이언트 요청을 받고 응답을 반환하는 계층.
-
 - `Business Layer (@Service)` : 비즈니스 로직을 처리하는 계층.
-
 - `Data Access Layer (@Repository)` : 데이터베이스 CRUD 작업을 담당하는 계층.
 
 ---
