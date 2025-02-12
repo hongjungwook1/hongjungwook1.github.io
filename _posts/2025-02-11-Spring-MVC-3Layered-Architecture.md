@@ -43,18 +43,14 @@ Spring Boot는 다양한 라이브러리를 포함할 뿐만 아니라 이를 �
 ### Spring
 
 - `WAR(Web Application Archive) 방식` : Servlet Container(WAS)에 배포되는 웹 애플리케이션 포맷.
-
 - `외장 톰캣 필요` : 별도로 Tomcat 같은 웹 컨테이너를 실행한 후 WAR 파일을 배포해야 함.
-
 - `Tomcat을 미리 띄워서 WAR 파일을 배포 가능`
   - 하나의 Tomcat 서버에서 여러 개의 WAR 파일을 실행하는 것도 가능함.
 
 ### Spring Boot
 
 - `JAR(Java Archive) 방식` : JRE에서 바로 실행 가능한 Java 애플리케이션 포맷.
-
 - `내장 톰캣 포함` : 별도로 톰캣을 실행할 필요 없이 애플리케이션을 실행하면 자동으로 내장 톰캣이 실행됨.
-
 - `JAR 실행 방식` : `java -jar myapp.jar` 명령어만으로 실행 가능.
   - WAR 방식과 달리 하나의 Tomcat에서 여러 애플리케이션을 실행할 수 없음 (각 JAR은 독립적).
 
@@ -72,7 +68,7 @@ Spring은 크게 두 가지 아키텍처 패턴을 기반으로 동작합니다
 
 MVC(Model-View-Controller) 패턴은 클라이언트 요청을 처리하고 적절한 응답을 반환하기 위한 아키텍처입니다.
 
-- **Front Controller (DispatcherServlet)**
+- Front Controller (DispatcherServlet)
   - 모든 요청을 중앙에서 관리하며 적절한 Controller를 찾아서 실행하는 역할.
   - Controller는 View 이름과 Model 데이터를 반환.
   - 반환하는 View가 HTML인 경우 → `ViewResolver`가 적절한 템플릿을 찾아 렌더링.
@@ -82,8 +78,8 @@ MVC(Model-View-Controller) 패턴은 클라이언트 요청을 처리하고 적�
 
 1. 클라이언트가 요청을 보냄.
 2. Tomcat이 요청을 받고 정적 페이지가 존재하는지 확인.
-3. 정적 페이지가 없다면 **Front Controller(DispatcherServlet)**이 요청을 처리.
-4. DispatcherServlet이 적절한 Controller를 찾아서 실행.
+3. 정적 페이지가 없다면 Front Controller(DispatcherServlet)이 요청을 처리.
+4. Front Controller(DispatcherServlet)이 적절한 Controller를 찾아서 실행.
 5. Controller는 데이터를 가공한 후 Model과 View를 반환.
 6. ViewResolver가 적절한 View 템플릿을 찾아서 Model 데이터를 적용 후 최종 View를 생성.
 
