@@ -1,11 +1,11 @@
 ---
-title: Spring Boot 특장점 및 MVC , 3LayeredArchitecture
+title: Spring Boot 특장점 및 MVC , 3-Layered-Architecture
 description: >-
-  Spring Boot 특장점 및 MVC , 3LayeredArchitecture에 대해 정리하였습니다.
+  Spring Boot 특장점 및 MVC , 3-Layered-Architecture 대해 정리하였습니다.
 author: JWHONG
 date: 2025-02-11 11:00:00 +0900
-categories: [Spring, Spring Boot, MVC, 3LayeredArchitecture, Backend]
-tags: [Spring, Spring Boot, MVC, 3LayeredArchitecture, Backend]
+categories: [Spring, Spring Boot, MVC, 3-Layered-Architecture, Backend]
+tags: [Spring, Spring Boot, MVC, 3-Layered-Architecture, Backend]
 pin: true
 media_subpath: "/posts/20250211"
 ---
