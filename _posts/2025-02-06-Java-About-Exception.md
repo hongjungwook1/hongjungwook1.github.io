@@ -1,9 +1,9 @@
 ---
-title: Java 예외 처리 : 컴파일 에러(Checked)와 런타임 에러(Unchecked)
+title: "Java 예외 처리 : 컴파일 에러(Checked)와 런타임 에러(Unchecked)"
 description: >-
   자바는 예외(Exception) 처리를 아주 엄격하게 강제합니다. 자바에서는 Checked Exception과 Unchecked Exception 두 가지로 명확히 구분합니다.
-author: JWHONG
-date: 2025-02-06 11:00:00 +0900
+author: "JWHONG"
+date: "2025-02-06 11:00:00 +0900"
 categories: [Java, Exception, Tutorial]
 tags: [Java, Exception]
 pin: true
