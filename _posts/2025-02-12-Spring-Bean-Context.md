@@ -130,10 +130,11 @@ Spring에서 빈(Bean)을 주입하는 방법에는 여러 가지가 있습니�
 public class UserController {
   UserServiceInterface userService;
 }
-
 ```
 
 > **@RequiredArgsConstructor**를 사용하면 **final** 필드에 대한 생성자 자동 생성이 가능합니다.
+
+---
 
 ### 필드 주입 (Property Injection)
 
@@ -155,6 +156,8 @@ public class UserController {
 ```
 
 > **@Autowired**를 필드에 직접 적용하는 방식은 **지양하는 것이 좋습니다**. 생성자 주입을 사용하는 것이 더 안전하고 유지보수하기 쉽습니다.
+
+---
 
 ### 수정자 주입 (Setter Injection)
 
