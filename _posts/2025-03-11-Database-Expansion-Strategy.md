@@ -29,7 +29,7 @@ NoSQL 데이터베이스(Couchbase, Elasticsearch 등)를 사용할 때 **Replic
 대규모 데이터를 효율적으로 관리할 수 있도록 데이터를 쪼개어 저장합니다.
 
 ![Image](https://github.com/user-attachments/assets/16f98041-8090-4a42-8c65-4a6d7e44f798)
-> 이미지 출처 : :https://www.digitalocean.com/community/tutorials/understanding-database-sharding
+> 이미지 출처 : <https://www.digitalocean.com/community/tutorials/understanding-database-sharding>
 
 ### (Vertical) Partitioning: 컬럼(열) 분할
 
@@ -64,4 +64,4 @@ NoSQL 데이터베이스(Couchbase, Elasticsearch 등)를 사용할 때 **Replic
   - **애플리케이션의 퍼포먼스(Performance), 확장성(Scalability), 보안(Security) 최적화 가능**
 
 ![Image](https://github.com/user-attachments/assets/d207f4b2-2710-4e5d-9ab5-50ae5c224b19)
-> 출처 : https://docs.aws.amazon.com/ko_kr/prescriptive-guidance/latest/modernization-data-persistence/cqrs-pattern.html
+> 출처 : <https://docs.aws.amazon.com/ko_kr/prescriptive-guidance/latest/modernization-data-persistence/cqrs-pattern.html>
