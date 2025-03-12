@@ -29,7 +29,7 @@ media_subpath: "/posts/20250311"
 
   - **행렬(Row-Column) 기반의 정형 데이터 저장**
   - **고정된 스키마(Fixed Schema) 사용**
-  - **데이터 간 관계(Relation)를 이용해 정합성 유지 (PK-FK 관계)**
+  - **데이터 간 관계(Relation)를 이용해 일관성 유지 (PK-FK 관계)**
   - **SQL(Structured Query Language) 사용**
   - **트랜잭션과 무결성 보장 (ACID 특성 지원)**
 
@@ -66,7 +66,7 @@ media_subpath: "/posts/20250311"
 ### ACID 특성
 
   - **원자성(Atomicity)** : 트랜잭션 내 모든 연산이 성공 또는 실패해야 함
-  - **일관성(Consistency)** : 트랜잭션 실행 전후 데이터 정합성이 유지됨
+  - **일관성(Consistency)** : 트랜잭션 실행 전후 데이터 일관성이 유지됨
   - **격리성(Isolation)** : 여러 트랜잭션이 동시에 실행될 때 서로 간섭하지 않음
   - **지속성(Durability)** : 트랜잭션이 성공적으로 완료되면 데이터가 영구적으로 저장됨
 
