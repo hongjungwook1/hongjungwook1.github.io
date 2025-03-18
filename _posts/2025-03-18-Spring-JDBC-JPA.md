@@ -65,7 +65,7 @@ public class User {
 
 먼저 `build.gradle` 파일에서 MySQL 드라이버와 JPA 관련 의존성을 추가합니다.
 
-```java
+```xml
 dependencies {
     runtimeOnly 'mysql:mysql-connector-java' // MySQL 드라이버
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa' // JPA
@@ -74,7 +74,7 @@ dependencies {
 
 그리고 `application.yml`에서 MySQL 접속 정보를 설정합니다.
 
-```java
+```yml
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -179,6 +179,6 @@ PreparedStatement는 **내부적으로 값의 이스케이핑을 자동 처리**
 Spring Boot에서 MySQL을 사용하려면 **JDBC, JPA, Connection Pool** 등에 대한 개념을 이해하는 것이 중요합니다.
 
  - **JDBC**는 SQL을 직접 실행할 수 있지만 코드가 길어지고 유지보수가 어렵습니다.
- - **JPA**는 객체를 기반으로 데이터를 관리하며, 코드가 간결해지고 유지보수가 편리해집니다.
+ - **JPA**는 객체를 기반으로 데이터를 관리하며 코드가 간결해지고 유지보수가 편리해집니다.
  - **Connection Pool**(HikariCP 등)을 활용하면 성능을 최적화할 수 있습니다.
  - **SQL Injection 방지**를 위해 PreparedStatement를 사용하는 것이 필수입니다.
