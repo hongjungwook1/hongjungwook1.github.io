@@ -19,12 +19,12 @@ Spring에서 `@Transactional`을 사용할 때 `PlatformTransactionManager`의 �
 
 ```java
 @Transactional(
-        propagation   = Propagation.REQUIRED,      // 트랜잭션 전파 방식
-        isolation     = Isolation.REPEATABLE_READ, // 트랜잭션 격리 수준
-        timeout       = -1,                        // 트랜잭션 타임아웃 설정
-        readOnly      = false,                     // 읽기 전용 여부
-        rollbackFor   = Exception.class,           // 롤백 대상 예외
-        noRollbackFor = RuntimeException.class     // 롤백 제외 예외
+    propagation   = Propagation.REQUIRED,      // 트랜잭션 전파 방식
+    isolation     = Isolation.REPEATABLE_READ, // 트랜잭션 격리 수준
+    timeout       = -1,                        // 트랜잭션 타임아웃 설정
+    readOnly      = false,                     // 읽기 전용 여부
+    rollbackFor   = Exception.class,           // 롤백 대상 예외
+    noRollbackFor = RuntimeException.class     // 롤백 제외 예외
 )
 public void method() {
     jdbcTemplate.update(...);
