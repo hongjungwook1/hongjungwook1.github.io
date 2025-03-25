@@ -158,7 +158,7 @@ public class Member {
 
 > mappedBy 값은 연관관계 주인 객체의 필드명과 일치해야 합니다.
 
-### 예제 : mappedBy 설정정
+### 예제 : mappedBy 설정
 
 ```java
 @Entity
