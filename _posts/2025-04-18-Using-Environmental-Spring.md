@@ -1,5 +1,5 @@
 ---
-title: Spring Boot에서 환경변수 사용하기: 윈도우 & 리눅스 서버까지 완벽 정리
+title: Spring Boot에서 환경변수 사용하기 윈도우 & 리눅스 서버까지 완벽 정리
 description: >-
     Spring Boot에서 이메일 인증과 같은 민감한 설정 정보를 안전하게 관리하기 위한 환경변수 설정 방법을 윈도우, 리눅스, Docker 환경까지 상세히 정리한 글입니다.
 author: JWHONG
