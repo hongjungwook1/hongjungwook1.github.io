@@ -35,7 +35,7 @@ media_subpath: "/posts/202500503"
 
 ---
 
-## `controller` - 사용자 요청 진입 지점
+## controller - 사용자 요청 진입 지점
 
 - `KakaoLoginController.java`는 클라이언트가 카카오로부터 전달받은 인가코드를 `GET` 요청으로 보내는 진입점입니다.
 - 인가 코드를 받아 `KakaoOAuthService`에 위임하며 결과적으로 JWT 토큰을 반환합니다.
@@ -50,7 +50,7 @@ public ResponseEntity<?> kakaoLogin(@RequestParam String code) {
 
 ---
 
-## `service` - OAuth2 흐름 처리 핵심 로직
+## service - OAuth2 흐름 처리 핵심 로직
 
 - `KakaoOAuthService.java`는 다음과 같은 역할을 수행합니다
 
@@ -68,7 +68,7 @@ public String loginWithKakao(String code) {
 
 ---
 
-## `dto` - 외부 응답 데이터 구조 매핑
+## dto - 외부 응답 데이터 구조 매핑
 
 - `KakaoTokenResponse.java` 카카오에서 받은 Access Token 응답(JSON)을 자바 객체로 변환합니다.
 
@@ -99,7 +99,7 @@ public class KakaoUserInfo {
 
 ---
 
-## `util` - JWT 토큰 생성기
+## util - JWT 토큰 생성기
 
 - `JwtTokenProvider.java`는 사용자 이메일을 기반으로 JWT 토큰을 생성합니다.
 - **HS256 알고리즘**을 사용할 경우 키는 반드시 **256비트(32바이트 이상)** 길이를 만족해야 합니다.
@@ -121,10 +121,10 @@ public class JwtTokenProvider {
     }
 }
 ```
->보안 팁 : `SECRET_KEY`는 외부에 노출되면 안 되며 `application.yml` 또는 `환경변수`로 관리하는 것이 좋습니다.
+>보안 팁 : **SECRET_KEY**는 외부에 노출되면 안 되며 **application.yml** 또는 **환경변수**로 관리하는 것이 좋습니다.
 ---
 
-## `config` - WebClient 설정
+## config - WebClient 설정
 
 - 카카오 API 호출을 위해 `WebClient` Bean을 등록합니다.
 
