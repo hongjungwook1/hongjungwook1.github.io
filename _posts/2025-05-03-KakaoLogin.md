@@ -122,6 +122,7 @@ public class JwtTokenProvider {
 }
 ```
 >보안 팁 : **SECRET_KEY**는 외부에 노출되면 안 되며 **application.yml** 또는 **환경변수**로 관리하는 것이 좋습니다.
+
 ---
 
 ## config - WebClient 설정
